@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name = "author" content = "Web-Publisher">
+    <meta name = "description" content = "This website is portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no, maximum-scale = 1.0, minimum-scale = 1.0">
+    <meta http-equiv="U-XA-Compatible" content = "ie=edge">
+
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Portfolio">
+    <meta property="og:title" content="Portfolio website homepage">
+    <meta property="og:description" content="This website is portfolio website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpX51POGrj0813zC258Vu_JnfSmLjqnNq-FpUupIYEi6p1fxOO&usqp=CAU">
+    <meta property="og:url" content="https://www.outback.co.kr"> <!-- 페이지 제작 후 이것으로 연결 -->
+    
+
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="website">
+    <meta property="twitter:site" content="Portfolio">
+    <meta property="twitter:title" content="Portfolio website homepage">
+    <meta property="twitter:description" content="This website is portfolio website">
+    <meta property="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpX51POGrj0813zC258Vu_JnfSmLjqnNq-FpUupIYEi6p1fxOO&usqp=CAU">
+    <meta property="twitter:url" content="https://www.outback.co.kr">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="shortcut icon" href="img/boy.ico">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src = "main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  
+</head>
+<body>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="body__container" id = "home">
+        <!-- header -->
+        <header class = "section clearfix">
+            <div class="nav--inner">  
+                <nav id="navbar" class="menu-group float--left navbar">
+                    <ul id="scroll-spy" class="main-menu">   
+                        <li class="active"><a href="#home"><span>HOME</span></a></li>
+                        <li><a href="#aboutpos"><span>ABOUT ME</span></a></li>
+                        <li><a href="#codingpos"><span>CODING</span></a></li>
+                        <li><a href="#portfoliopos"><span>PORTFOLIO</span></a></li>
+                        <li><a href="#contactpos"><span>CONTACT</span></a></li>
+                    </ul>
+                </nav>
+                <div class="sign-group float--right">
+                    <ul class="sub-menu">
+                        <li><a href="#">Ki-chul's Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- visual -->
+        <section class = "section section--visual">
+                <div class="text--container">
+                    <div class="inner">
+                        <div class="image--title">
+                            <p class = "line-1 anim-typewriter">안녕하세요 웹 퍼블리셔 신기철입니다.</p>
+                        </div>
+                        <div class="image--description">
+                             <p>효울적인 웹 개발과 새로운 디자인에 대해 관심이 많고 관련 연구를 합니다<br>
+                                프런트 엔드 개발자가 되기 위해 HTML/CSS/Javasvript 공부하고 있습니다
+                             </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    
+        <!-- feature -->
+        <section id = "aboutpos" class="section section--feature">
+            
+            <div id="about"></div>    
+            <div class="inner">
+                
+                <h1 class = "title" >About</h1>
+
+                <div class="content">
+
+                    
+
+                    <div class="about-me">
+
+                        <div class="coding-history">
+                            <p>Ki-chul's Coding History</p>
+                            <div class="profile-image"> </div>
+                        </div>
+            
+                        <div class="introduction">
+
+                            <ul class = "profile">
+                                <h2>Profile</h2>
+                                <li>이름 : 신기철</li>
+                                <li>나이 : 27세</li>
+                                <!-- <li>연락처 : 010-9935-7171</li>
+                                <li>E-mail : skchope71@naver.com</li> -->
+                            </ul>
+
+                            <ul class = "education">
+                                <h2>Education</h2>
+                                <li>대학교 : 경기대학교 졸업</li>
+                                <li>대학원 : 건국대학교 졸업</li>
+                            </ul>
+                            
+                            <ul class = "history">
+                                <h2>History</h2>
+                                <li>논문 : 영상인식과 립모션을 활용한 한국수어 번역(HCI)</li>
+                                <li>논문 : 다중 매체를 기반으로 한 한국 수어 번역 프레임워크(KCC)</li>
+                                <li>논문 : 퇴행성 근골격계 만성 질환자의 재활운동 관리 시스템(KCC)</li>
+                                <li>논문 : 영상인식을 통한 수어 동작 인식 및 번역(학위논문)</li>
+                                <li>프로젝트 : 노인 재활 어플 Livon 화면 설계</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                        
+                </div>
+                
+                <div id = "codingpos" class="skills">
+                    
+                    <h1 class = "title">Coding</h1>
+                    <div class="content">
+                    <div id="coding"></div>
+                        
+                        <ul>
+                            <li>
+                                <div class="content--item">
+                                    <img src="img/s_icon01.png" alt="HTML">
+                                    <p>HTML 80%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content--item">
+                                    <img src="img/s_icon02.png" alt="CSS">
+                                    <p>CSS 85%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content--item">
+                                    <img src="img/s_icon03.png" alt="Javascript">
+                                    <p>Js/Jquery 20%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content--item">
+                                    <img src="img/s_icon04.png" alt="Photoshop">
+                                    <p>Photoshop 20%</p>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <div class="content--item">
+                                    <img src="img/s_icon05.png" alt="Illustrator">
+                                    <p>AI 20%</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                
+                
+                <div id = "portfoliopos" class="portfolio">
+                    
+                    <h1 class = "title">Portfolio</h1>
+                    <div class="content">
+                        <div id = "portfolio"></div>
+                        <div class="portfolio-menu">
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="tab-1"><a href="#portfoliopos">ALL</a></li>
+                                <li class="tab-link" data-tab="tab-2"><a href="#portfoliopos">PC</a></li>
+                                <li class="tab-link" data-tab="tab-3"><a href="#portfoliopos">RESPONSIVE</a></li>
+                                <li class="tab-link" data-tab="tab-4"><a href="#portfoliopos">MOBILE</a></li>
+                            </ul>
+                        </div>
+                        <div id = "tab-1" class="portfolio-item tab-content current">
+                            <ul>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Portfolio/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/portfolio_iamge.PNG" alt="포트폴리오 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>웹 퍼블리셔 포트폴리오</h2>
+                                                <span>(창작 사이트)</span>
+                                                <h3>연관어</h3>
+                                                <span>#HTML/CSS/Javascript #포트폴리오</span>                                             
+                                            </div>
+                                        </div>
+                                        <p>포트폴리오 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Github/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/github_image.PNG" alt="깃허브 웹사이트" >
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>깃허브 홈페이지</h2>
+                                                <span>(리뉴얼 사이트)</span>
+                                                <h3>연관어</h3>
+                                                <span>#RESPONSIVE #깃허브</span>                                             
+                                            </div>
+                                        </div>
+                                        <p>깃허브 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Outback/" target="_blank">
+                                        <div class="tab--inner">
+                                            <img src="img/outback_image.PNG" alt="아웃백 웹사이트">
+                                            <div class="notice">
+                                                <div class="line line-t"></div>
+                                                <div class="line line-r"></div>
+                                                <div class="line line-b"></div>
+                                                <div class="line line-l"></div>
+                                                <div class="notice--inner">
+                                                    <h2>아웃백 홈페이지</h2>
+                                                    <span>(동일 디자인 & 변형)</span>
+                                                    <h3>연관어</h3>
+                                                    <span>#HTML/CSS #아웃백 #모작&변형</span>
+                                                </div>
+                                            </div>
+                                            <p>아웃백 웹페이지</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Publisher/" target="_blank">
+                                    <div class="tab--inner">
+                                        
+                                        <img src="img/publisher_image.PNG" alt="퍼블리셔 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>퍼블리셔 홈페이지</h2>
+                                                <span>(리뉴얼 사이트)</span>
+                                                <h3>연관어</h3>
+                                                <span>#HTML/CSS #퍼블리셔 #리뉴얼 </span>
+                                            </div>
+                                        </div>
+                                        <p>퍼블리셔 웹페이지</p>
+                                        
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Fastcampus/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/fastcampus_image.PNG" alt="패스트캠퍼스 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>패스트캠퍼스 홈페이지</h2>
+                                                <span>(동일한 디자인 & 변형)</span>
+                                                <h3>연관어</h3>
+                                                <span>#RESPONSIVE #패스트캠퍼스 #모작</span>
+                                            </div>
+                                        </div>
+                                        <p>패스트캠퍼스 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li id = "contactpos">
+                                    <a href="http://webpublisher.dothome.co.kr/Lottecinema/" target="_blank">
+                                    <div class="tab--inner">
+                                        <!-- contact 높이가 너무 작기에 이곳으로 위치를 바꿈 -->
+                                        
+                                        <img src="img/lottecinema_image.PNG" alt="롯데시네마 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>롯데시네마 웹페이지</h2>
+                                                <span>(동일 디자인 & 변형)</span>
+                                                <h3>연관어</h3>
+                                                <span>#HTML/CSS/Javascript #롯데시네마</span>
+                                            </div>
+                                        </div>
+                                        <p>롯데시네마 웹페이지</p>
+                                        
+                                    </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div id = "tab-2" class="portfolio-item tab-content">
+                            <ul>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Portfolio/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/portfolio_iamge.PNG" alt="포트폴리오 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>웹 퍼블리셔 포트폴리오</h2>
+                                                <span>(창작 사이트)</span>
+                                                <h3>연관어</h3>
+                                                <span>#HTML/CSS/Javascript #포트폴리오</span>                                             
+                                            </div>
+                                        </div>
+                                        <p>포트폴리오 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Outback/" target="_blank">
+                                        <div class="tab--inner">
+                                            <img src="img/outback_image.PNG" alt="아웃백 웹사이트">
+                                            <div class="notice">
+                                                <div class="line line-t"></div>
+                                                <div class="line line-r"></div>
+                                                <div class="line line-b"></div>
+                                                <div class="line line-l"></div>
+                                                <div class="notice--inner">
+                                                    <h2>아웃백 홈페이지</h2>
+                                                    <span>(동일 디자인 & 변형)</span>
+                                                    <h3>연관어</h3>
+                                                    <span>#HTML/CSS #아웃백 #모작&변형</span>
+                                                </div>
+                                            </div>
+                                            <p>아웃백 웹페이지</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Publisher/" target="_blank">
+                                    <div class="tab--inner">
+                                        
+                                        <img src="img/publisher_image.PNG" alt="퍼블리셔 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>퍼블리셔 홈페이지</h2>
+                                                <span>(리뉴얼 사이트)</span>
+                                                <h3>연관어</h3>
+                                                <span>#HTML/CSS #퍼블리셔 #리뉴얼 </span>
+                                            </div>
+                                        </div>
+                                        <p>퍼블리셔 웹페이지</p>
+                                        
+                                    </div>
+                                    </a>
+                                </li>
+                                <li id = "contactpos">
+                                    <a href="http://webpublisher.dothome.co.kr/Lottecinema/" target="_blank">
+                                    <div class="tab--inner">
+                                        <!-- contact 높이가 너무 작기에 이곳으로 위치를 바꿈 -->
+                                        
+                                        <img src="img/lottecinema_image.PNG" alt="롯데시네마 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>롯데시네마 웹페이지</h2>
+                                                <span>(동일 디자인 & 변형)</span>
+                                                <h3>연관어</h3>
+                                                <span>#HTML/CSS/Javascript #롯데시네마</span>
+                                            </div>
+                                        </div>
+                                        <p>롯데시네마 웹페이지</p>
+                                        
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id = "tab-3" class="portfolio-item tab-content">
+                            <ul>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Github/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/github_image.PNG" alt="깃허브 웹사이트" >
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>깃허브 홈페이지</h2>
+                                                <span>(리뉴얼 사이트)</span>
+                                                <h3>연관어</h3>
+                                                <span>#RESPONSIVE #깃허브</span>                                             
+                                            </div>
+                                        </div>
+                                        <p>깃허브 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Fastcampus/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/fastcampus_image.PNG" alt="패스트캠퍼스 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>패스트캠퍼스 홈페이지</h2>
+                                                <span>(동일한 디자인 & 변형)</span>
+                                                <h3>연관어</h3>
+                                                <span>#RESPONSIVE #패스트캠퍼스 #모작</span>
+                                            </div>
+                                        </div>
+                                        <p>패스트캠퍼스 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id = "tab-4" class = "portfolio-item tab-content">
+                            <ul>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Github/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/github_image.PNG" alt="깃허브 웹사이트" >
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>깃허브 홈페이지</h2>
+                                                <span>(리뉴얼 사이트)</span>
+                                                <h3>연관어</h3>
+                                                <span>#RESPONSIVE #깃허브</span>                                             
+                                            </div>
+                                        </div>
+                                        <p>깃허브 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://webpublisher.dothome.co.kr/Fastcampus/" target="_blank">
+                                    <div class="tab--inner">
+                                        <img src="img/fastcampus_image.PNG" alt="패스트캠퍼스 웹사이트">
+                                        <div class="notice">
+                                            <div class="line line-t"></div>
+                                            <div class="line line-r"></div>
+                                            <div class="line line-b"></div>
+                                            <div class="line line-l"></div>
+                                            <div class="notice--inner">
+                                                <h2>패스트캠퍼스 홈페이지</h2>
+                                                <span>(동일한 디자인 & 변형)</span>
+                                                <h3>연관어</h3>
+                                                <span>#RESPONSIVE #패스트캠퍼스 #모작</span>
+                                            </div>
+                                        </div>
+                                        <p>패스트캠퍼스 웹페이지</p>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+    
+        <!-- footer -->
+        <footer class = "section">
+            
+            <div class="inner">
+
+                <div class="contact">
+                    <div id="contact"></div>
+                    <h1 class = "title">Contact</h1>
+                    <p>
+                        Copyrightⓒ2019 2020 Web Publisher 신기철 All rights reserved.<br>
+                        본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.
+                    </p>
+  
+                </div>
+                
+            </div>
+        </footer>
+    
+        
+</div>
+</body>
+</html>

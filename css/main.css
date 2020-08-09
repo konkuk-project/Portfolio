@@ -1,0 +1,574 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* common */
+.body__container {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color : #424242;
+    padding-top: 45px;
+}
+
+a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color : #000;
+    letter-spacing: -1px;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+/* float clearfix */
+.float--left {
+    float : left;
+}
+
+.float--right {
+    float : right;
+}
+
+.clearfix::after {
+    content : "";
+    clear : both;
+    display: block;
+}
+
+/* section & inner */
+.section {
+    position: relative;
+}
+
+.section .title {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color : #333;
+    
+}
+
+.section .title::after {
+    content : "";
+    position: absolute;
+    top: 125%;
+    left: 47.5%;
+    width: 75px;
+    height: 1px;
+    background-color: #000;
+}
+
+.section .content {
+    margin: 80px 0;
+    position: relative;
+}
+
+#aboutpos {
+    padding-top: 50px;
+}
+
+/* 이 영역 내 모든 컨텐츠를 중앙 정렬하고 일정 범위 내에 모으기 위함 */
+.section .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* header  */
+header {
+    border-bottom: 1px solid rgba(0,0,0,.25);
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+    background: #fff;
+}
+
+header.section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index : 999;
+}
+
+header.section .nav--inner {
+    height: 45px;
+}
+
+header .menu-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+    /* %가 있을 경우 부모 요소의 높이를 사용한다 여기서는 inner의 높이다. */
+}
+
+header .menu-group .main-menu {
+    display: flex;
+}
+
+header .menu-group .main-menu a {
+    display: block;
+    padding: 0 15px;
+   
+}
+
+header .menu-group .main-menu a:hover {
+    color :  #ff0073;
+}
+
+header .sign-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .sign-group .sub-menu a {
+    display: block;
+    padding: 15px;
+}
+
+#scroll-spy li.active a {
+    color : #ff0073;
+}
+
+
+/* section visual */
+.section--visual {
+    width: 100%;
+    height: 700px;
+    background: url("../img/notebook_large.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section--visual .text--container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+
+.section--visual .inner {
+    height: 700px;
+    padding: 4em;
+    
+}
+
+.section--visual .image--title {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.25;
+    color : #fff;
+    font-weight: 500;
+    letter-spacing: 1pxx;
+    color: rgba(255,255,255,1); 
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,1);
+    
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 15.7em;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,1);}
+  to{border-right-color: transparent;}
+}
+
+.section--visual .image--description {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 20%;
+}
+
+.section--visual .image--description p {
+    font-size: 20px;
+    line-height: 1.25;
+    color : #fff;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.section--feature {
+    
+
+}
+
+.section--feature .inner {
+    
+}
+
+.section--feature .about-me {
+    display: flex;
+}
+
+.section--feature .about-me .coding-history {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section--feature .about-me .coding-history p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color : #000;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.section--feature .about-me .coding-history p::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 26%;
+    width: 20px;
+    height: 10px;
+    background: #ff0073;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+}
+
+.section--feature .about-me .coding-history .profile-image {
+    background: url("../img/profile_bg.PNG") no-repeat;
+    height: 370px;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.section--feature .about-me .introduction {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.section--feature .about-me .introduction ul {
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: 20%;
+}
+
+.section--feature .about-me .introduction ul:last-child {
+    margin-bottom: 0;
+}
+
+.section--feature .about-me .introduction ul li {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    
+}
+
+.section--feature .about-me .introduction h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color : #000;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.section--feature .about-me .introduction h2::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -30px;
+    width: 20px;
+    height: 10px;
+    background: #ff0073;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+}
+
+.section--feature .about-me .introduction .profile {
+
+}
+
+.section--feature .about-me .introduction .education {
+
+}
+
+.section--feature .about-me .introduction .history {
+
+}
+
+.section--feature .skills {
+    
+}
+
+.section--feature .skills .content {
+    max-width: 900px;
+    margin: 100px auto;
+}
+.section--feature .skills .content ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.section--feature .skills .content ul li {
+  
+}
+
+.section--feature .skills .content ul li .content--item img {
+    display: block;
+    margin: 5px auto;
+}
+
+.section--feature .skills .content ul li .content--item p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color : #000;
+    text-align: center;
+}
+
+.section--feature .portfolio {
+
+}
+
+.section--feature .portfolio .portfolio-menu {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.section--feature .portfolio .portfolio-menu ul {
+    display: flex;
+}
+
+.section--feature .portfolio .portfolio-menu ul a {
+    padding: 10px;
+    margin: 10px 2px;
+    color: #262626;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.section--feature .portfolio .portfolio-menu ul li.current a {
+    color : #f2f2f2;
+    background-color: #ff0073;
+    font-weight: 700;
+}
+
+
+.section--feature .portfolio .portfolio-item {
+    margin: 50px 0;
+}
+
+.section--feature .portfolio .portfolio-item ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    
+}
+
+.section--feature .portfolio .portfolio-item ul li {
+    margin: 5px;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.portfolio .portfolio-item ul li .tab--inner {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.portfolio .portfolio-item ul li .tab--inner a {
+    
+}
+
+.portfolio .portfolio-item ul li .tab--inner img {
+    display: block;
+    width: 310px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.portfolio .portfolio-item ul li .tab--inner .line {
+    background-color: #fff;
+    z-index : 5;
+}
+
+.portfolio .portfolio-item ul li .tab--inner .line-t {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 95%;
+    height: 5px;
+}
+
+.portfolio .portfolio-item ul li .tab--inner .line-r {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    width: 5px;
+    height: 95%;
+}   
+
+.portfolio .portfolio-item ul li .tab--inner .line-b {
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    width: 95%;
+    height: 5px;
+}
+
+.portfolio .portfolio-item ul li .tab--inner .line-l {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 5px;
+    height: 95%;
+}
+
+.portfolio .portfolio-item ul li .tab--inner .notice {
+    position: absolute;
+    color : #fff;
+    /* background-color: rgba(255,51,153,.5); */
+    background-color: rgba(252,0,114,.5);
+    /* background-color: rgba(0,0,0,0.4); */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.portfolio .portfolio-item ul li .notice .notice--inner {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    
+}
+
+.portfolio .portfolio-item ul li .notice .notice--inner h2 {
+    
+    font-size: 18px;
+    font-weight: 500;
+    height: 18px;
+}
+
+.portfolio .portfolio-item ul li .notice .notice--inner h3 {
+    margin-top: 20px;
+    height: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.portfolio .portfolio-item ul li .notice .notice--inner span {
+   
+    font-size: 14px;
+    font-weight: 380;
+}
+
+.portfolio .portfolio-item ul li .notice .notice--inner span:first-child {
+    
+}
+
+.portfolio .portfolio-item .notice .notice--inner {
+
+}
+
+
+.section--feature .portfolio .portfolio-item ul li:hover .notice {
+    visibility: visible;
+}
+
+.section--feature .portfolio .portfolio-item ul li p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color : #000;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section--feature .portfolio .tab-content{
+	display: none;
+}
+
+.section--feature .portfolio .tab-content.current{
+	display: inherit;
+}
+
+
+/* footer */
+
+footer.section {
+    background: #2f2f2f;
+}
+
+footer .contact {
+   position: relative;
+   height: 400px;
+}
+
+footer .contact .title {
+    position: absolute;
+    top: 30px;
+}
+
+footer .contact .title {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color : white;
+}
+
+footer .contact .title::after {
+    content : "";
+    position: absolute;
+    top: 125%;
+    left: 47.5%;
+    width: 75px;
+    height: 1px;
+    background : white;
+}
+
+
+footer .contact p {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    color : white;
+    line-height: 32px;
+    text-align: center;
+}
+
+.title, .skills, .portfolio {
+    padding-top: 40px;
+    
+}

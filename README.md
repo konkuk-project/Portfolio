@@ -1,5 +1,6 @@
 # Portfolio
 
-1. This is the Portfolio Webpage I made for a job. (Create)
-2. html, css, javascript
+1. This is the first Portfolio Webpage. (Create)
+2. Making for my resume portfolio
+3. html, css, javascript 
 
